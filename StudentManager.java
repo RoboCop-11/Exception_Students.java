@@ -138,24 +138,4 @@ public class StudentManager {
         }
     }
 
-    // Method to delete a student from the list using PRN
-    public void deleteStudent(Scanner sc) throws StudentNotFoundException {
-        System.out.print("Enter PRN to delete: ");
-        String prn = sc.next();
-
-        boolean found = false;
-
-        for (int i = 0; i < studentList.size(); i++) {
-            if (studentList.get(i).getPrn().equals(prn)) {
-                studentList.remove(i);
-                System.out.println("Student deleted!");
-                found = true;
-                break;
-            }
-        }
-
-        if (!found) {
-            throw new StudentNotFoundException("Student not found for deletion.");
-        }
-    }
-}
+   
