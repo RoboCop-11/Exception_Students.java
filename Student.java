@@ -94,3 +94,18 @@ public class Student {
         this.marks = marks;
     }
 
+    /**
+     * Set (update) the name of the student.
+     * Parameter : Name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Display student details in a formatted way.
+     */
+    public void displayStudent() {
+        System.out.println("\nPRN: " + prn + "\nName: " + name + "\nDOB: " + dob + "\nMarks: " + marks);
+    }
+}
